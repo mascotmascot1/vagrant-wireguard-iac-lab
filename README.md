@@ -1,3 +1,28 @@
+<div align="center">
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=40&duration=3000&pause=2000&color=F7F7F7&vCenter=true&width=640&height=80&lines=Vagrant+WireGuard+IaC+Lab" alt="Typing SVG" /></a>
+
+[![Vagrant](https://img.shields.io/badge/Vagrant-1563FF?style=for-the-badge&logo=vagrant&logoColor=white)](https://www.vagrantup.com/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![VirtualBox](https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=virtualbox&logoColor=white)](https://www.virtualbox.org/)
+[![SSH](https://img.shields.io/badge/SSH-232F3E?style=for-the-badge&logo=ssh&logoColor=white)](https://www.ssh.com/academy/ssh/protocol)
+[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+[![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=for-the-badge&logo=wireguard&logoColor=white)](https://www.wireguard.com/)
+
+**Infrastructure as Code (IaC) project demonstrating automated deployment of a secure,<br>
+three-node network cluster with WireGuard VPN and Zero-Touch SSH configuration.**
+
+<p align="center">
+  <kbd><a href="#-architecture-of-virtual-machines--%EF%B8%8F-key-features-of-automation">Architecture</a></kbd> •
+  <kbd><a href="#-1-zero-touch-ssh-provisioning-автоматическая-настройка-доступа">SSH Automation</a></kbd> •
+  <kbd><a href="#-wireguard-vpn--docker-host-vm2">WireGuard & Docker</a></kbd> •
+  <kbd><a href="#-требования-и-запуск">Quick Start</a></kbd>
+</p>
+</div>
+</br>
+</br>
+
 # 🛠 Automated WireGuard Infrastructure (Vagrant + VirtualBox)
 
 Этот репозиторий содержит код для автоматического развертывания безопасной сетевой инфраструктуры из трех узлов. Проект построен по принципу **IaC (Infrastructure as Code)**.
@@ -139,6 +164,40 @@ vagrant up
 ```
 
 ---
+
+## 🧪 Проверка работоспособности (Verification)
+
+Чтобы убедиться, что автоматизация отработала корректно, выполните следующие шаги:
+
+1. **Подключитесь к VM1:**
+   ```bash
+   vagrant ssh vm1
+
+```
+
+2. **Переключитесь на пользователя `ubuntu**` (именно для него сгенерированы ключи):
+```bash
+sudo su - ubuntu
+
+```
+
+
+3. **Проверьте беспарольный доступ к соседним узлам:**
+```bash
+ssh vm2  # Вход должен произойти мгновенно без запроса пароля
+
+```
+
+
+4. **Проверьте статус службы docker и сетевого интерфейса wireguard на VM2:**
+```bash
+sudo wg show
+sudo systemctl status wg-quick@wg0
+sudo systemctl status docker
+```
+
+---
+
 ## ⚠️ Важное примечание
 
 Этот проект создан для **образовательных и лабораторных целей**.
