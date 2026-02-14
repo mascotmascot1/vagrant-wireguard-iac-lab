@@ -16,7 +16,7 @@ three-node network cluster with WireGuard VPN and Zero-Touch SSH configuration.*
 <p align="center">
   <kbd><a href="#-architecture-of-virtual-machines--%EF%B8%8F-key-features-of-automation">Architecture</a></kbd> •
   <kbd><a href="#-1-zero-touch-ssh-provisioning-автоматическая-настройка-доступа">SSH Automation</a></kbd> •
-  <kbd><a href="#-wireguard-vpn--docker-host">WireGuard & Docker</a></kbd> •
+  <kbd><a href="#-3-wireguard-vpn--docker-host-vm2">WireGuard & Docker</a></kbd> •
   <kbd><a href="#-требования-и-запуск">Quick Start</a></kbd>
 </p>
 </div>
