@@ -1,6 +1,10 @@
 <div align="center">
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=40&duration=3000&pause=2000&color=F7F7F7&vCenter=true&width=640&height=80&lines=Vagrant+WireGuard+IaC+Lab" alt="Typing SVG" /></a>
+<img src="https://github.com/mascotmascot1/media/blob/main/in-use/vagrant-wireguard-iac-lab.svg" 
+     alt="Vagrant WireGuard IaC Lab" 
+     width="640" 
+     height="80" 
+     style="vertical-align: middle;" />
 
 [![Vagrant](https://img.shields.io/badge/Vagrant-1563FF?style=for-the-badge&logo=vagrant&logoColor=white)](https://www.vagrantup.com/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
