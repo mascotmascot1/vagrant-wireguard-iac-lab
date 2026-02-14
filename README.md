@@ -11,7 +11,7 @@
 [![VirtualBox](https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=virtualbox&logoColor=white)](https://www.virtualbox.org/)
 [![SSH](https://img.shields.io/badge/SSH-232F3E?style=for-the-badge&logo=ssh&logoColor=white)](https://www.ssh.com/academy/ssh/protocol)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
-[![Ubuntu Jammy](https://img.shields.io/badge/Ubuntu-Jammy_E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/jammy)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/jammy)
 [![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=for-the-badge&logo=wireguard&logoColor=white)](https://www.wireguard.com/)
 
 **Infrastructure as Code (IaC) project demonstrating automated deployment of a secure,<br>
