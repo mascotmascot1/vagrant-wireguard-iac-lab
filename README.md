@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/mascotmascot1/media/blob/main/in-use/vagrant-wireguard-iac-lab.svg" 
+<img src="https://github.com/mascotmascot1/media/blob/main/in-use/vagrant-wireguard-iac-lab-gray.svg" 
      alt="Vagrant WireGuard IaC Lab" 
      width="640" 
      height="80" 
