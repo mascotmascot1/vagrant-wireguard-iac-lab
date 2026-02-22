@@ -166,10 +166,9 @@ graph TD
 git clone https://github.com/mascotmascot1/vagrant-wireguard-iac-lab.git
 cd vagrant-wireguard-iac-lab
 
-```
 
-2. **Настройте сеть:** Отредактируйте переменную `$public_ip` в `Vagrantfile`, чтобы она соответствовала вашей локальной подсети (например, `192.168.1.100`).
-3. **Поднимите стенд:**
+```
+2. **Поднимите стенд:**
 ```bash
 vagrant up
 
