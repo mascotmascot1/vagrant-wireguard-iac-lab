@@ -6,9 +6,6 @@ Vagrant.configure("2") do |config|
 	$sshdcfg_path = "/etc/ssh/sshd_config"
 	# Set predefined credentials for the 'ubuntu' user (Global due to extensive use).
 	$credentials = 'ubuntu:123456ubuntu'
-	# VM2 Public Network IP. 
-    # IMPORTANT: Change this to match your local router's subnet (e.g., 192.168.1.111)
-    $public_ip = "192.168.0.100"
 	# Path to the directory containing SSH config overrides (Local Ruby variable).
 	sshdcfg_dir = "/etc/ssh/sshd_config.d"
 
@@ -78,9 +75,6 @@ SHELL
 		vm2.vm.hostname = "vm2"
 		# Assign a static IP address for the private network interface.
 		vm2.vm.network "private_network", ip: "192.168.56.101"
-
-		# Add an IP address to the home segment of the network.
-		vm2.vm.network "public_network", ip: $public_ip
 
 		# SECURITY NOTE: Bound to 127.0.0.1 on the host machine to protect unencrypted 
         # HTTP traffic used by wireguard-ui. This is a "Security by Design" approach 
